@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Restaurant Page
 
 A basic Restaurant Site. \
 Made for The Odin Project
