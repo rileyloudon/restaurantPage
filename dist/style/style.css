@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: auto;
+  background: #eee;
+  margin-bottom: 5vh;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+
+li {
+  display: inline;
+  color: var(--main-text-color);
+  font-size: 1.1em;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: inherit;
+}
+
+.home-img {
+  background: url(/dist/img/home.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin: 0;
+}
+
+.home-text {
+  padding-bottom: 2vh;
+}
+
+h1,
+p {
+  margin: 20px;
+  color: var(--main-text-color);
+}
+
+p {
+  font-size: 1.1em;
+}
