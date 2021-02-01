@@ -19,7 +19,7 @@ header nav {
 
 li {
   display: inline;
-  color: var(--main-text-color);
+  color: #343332;
   font-size: 1.1em;
   margin: 50px;
 }
@@ -33,16 +33,17 @@ a:active {
   color: inherit;
 }
 
-.home-img {
-  background: url(/dist/img/home.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 80vh;
+.home-img,
+.menu-img,
+.contact-img {
+  width: 100%;
+  height: auto;
   margin: 0;
 }
 
-.home-text {
+#home-text,
+#menu-items,
+#contact {
   padding-bottom: 2vh;
 }
 
