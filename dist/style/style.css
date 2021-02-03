@@ -81,6 +81,7 @@ a:active {
   padding: 8px;
   display: block;
   margin: auto;
+  margin-bottom: 2vh;
 }
 
 #submit:active {
