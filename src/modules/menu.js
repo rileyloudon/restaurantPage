@@ -36,6 +36,16 @@ const menu = () => {
             </div>
           </div>
         </li>
+
+        <li>
+          <div class='menu-item'>
+            <h3>Pet Treats</h3>
+            <div class='description'>
+              <img src='img/pet-food.jpg' alt='Pet Food'>
+              <p>Feel free to bring your furry friends, Brock makes a great homemade pet treat. Guaranteed to be a favorite!</p>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>`;
 };
