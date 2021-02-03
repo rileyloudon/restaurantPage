@@ -95,6 +95,16 @@ a:active {
   color: var(--dark-main-color);
 }
 
+/* Fix firefox text area not displaying proper font */
+::-moz-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Fix chrome text area not displaying proper font */
+::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
 #submit {
   color: var(--dark-main-color);
   border: 1px solid var(--dark-main-color);
