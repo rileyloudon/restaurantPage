@@ -3,8 +3,8 @@ const menu = () => {
 
   main.innerHTML = `
   <img src='img/menu.jpg' alt='Picture of Brock' class='home-img'>
-  <div id='menu-items'>
-  <h1>Menu</h1>
+  <div id='menu'>
+    <h1>Menu</h1>
     <p>Each item comes with your choice of tea, coffee, or water.</p>
       <ul>
         <li>

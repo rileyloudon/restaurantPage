@@ -8,6 +8,7 @@
   --light-secondary-color: #eee;
 }
 
+/* Global */
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -24,11 +25,30 @@ main {
     -30px 0 40px rgba(255, 255, 255, 0.05);
 }
 
+h1,
+p {
+  color: var(--dark-main-color);
+}
+
+h1 {
+  margin: 20px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+p {
+  margin: 0 20px;
+  font-size: 1.1em;
+}
+
 header nav {
   max-width: 800px;
   margin: auto;
   margin-top: 1vh;
 }
+
 nav ul {
   padding-left: 0;
   text-align: center;
@@ -39,20 +59,6 @@ li {
   color: var(--dark-main-color);
   font-size: 1.1em;
   margin: 5vw;
-}
-
-li .menu-item {
-  padding-bottom: 2vh;
-}
-
-.description {
-  display: flex;
-  vertical-align: middle;
-}
-
-.menu-item img {
-  width: 30%;
-  height: 100%;
 }
 
 a {
@@ -69,11 +75,48 @@ a:active {
   color: inherit;
 }
 
+.home-img,
+.menu-img,
+.contact-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#home-text,
+#menu,
+#contact {
+  padding-bottom: 4vh;
+}
+
+/* Menu */
+#menu ul {
+  margin: 0;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+}
+
+li .menu-item {
+  margin-bottom: 2vh;
+}
+
+.menu-item img {
+  width: 30%;
+  height: 100%;
+}
+
+/* Contact */
 #contact-form {
-  margin-left: 50px;
-  width: 40%;
+  width: 45%;
   color: var(--dark-main-color);
   margin: auto;
+}
+
+#contact p {
+  margin-bottom: 20px;
 }
 
 #name,
@@ -123,30 +166,54 @@ a:active {
   background-color: var(--dark-secondary-color);
 }
 
-.home-img,
-.menu-img,
-.contact-img {
-  width: 100%;
-  height: auto;
-  margin: 0;
+/* Media Queries */
+@media (max-width: 768px) {
+  .description p {
+    font-size: 1.05em;
+  }
+
+  .menu-item img {
+    width: 35%;
+    height: 100%;
+  }
+
+  #contact-form {
+    width: 50%;
+  }
 }
 
-#home-text,
-#menu-items,
-#contact {
-  padding-bottom: 2vh;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  #menu ul {
+    padding-inline-start: 20px;
+  }
+
+  .description p {
+    font-size: 0.85em;
+  }
+
+  .menu-item img {
+    width: 40%;
+    height: 100%;
+  }
+
+  #contact-form {
+    width: 60%;
+  }
 }
 
-h1,
-p {
-  margin: 20px;
-  color: var(--dark-main-color);
-}
-
-p {
-  font-size: 1.1em;
-}
-
+/* Dark/Light Mode based on users system preference */
 @media (prefers-color-scheme: light) {
   body {
     background: var(--light-secondary-color);
